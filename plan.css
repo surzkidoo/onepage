@@ -1,0 +1,205 @@
+.plan-page-image {
+  width: 100%;
+}
+
+.plan-detail-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-container{
+    box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.03);
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.plan-desc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.plan-key-value-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-key{
+    color: var(--labelcolor);
+    font-size: 11px;
+}
+
+.plan-value{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.plan-value-price{
+    color: var(--red);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.note-section{
+    background: linear-gradient(0deg, rgba(240, 173, 0, 0.18), rgba(240, 173, 0, 0.18)),
+linear-gradient(0deg, #FFFFEB, #FFFFEB);
+border: 1px solid rgba(240, 173, 0, 0.18);
+padding: 5px 10px;
+    
+}
+
+.note-text{
+    font-size: 11px;
+    color: var(--labelcolor);
+}
+.red-note{
+    color: var(--red);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.black-note{
+    color: var(--labelcolor);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.interest-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.interest{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.plan-invest-btn{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: var(--green);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 968px) {
+
+    .plan-page-image {
+        width: 400px;
+      }
+      
+      .plan-detail-container {
+      
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .section-container{
+          box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.03);
+          background-color: white;
+          border-radius: 8px;
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+      }
+      
+      .plan-desc-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+      }
+      
+      .plan-key-value-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .plan-key{
+          color: var(--labelcolor);
+          font-size: 13px;
+      }
+      
+      .plan-value{
+          color: var(--black);
+          font-size: 20px;
+          font-weight: 700;
+      }
+      
+      .plan-value-price{
+          color: var(--red);
+          font-size: 20px;
+          font-weight: 700;
+      }
+      
+      .note-section{
+          background: linear-gradient(0deg, rgba(240, 173, 0, 0.18), rgba(240, 173, 0, 0.18)),
+      linear-gradient(0deg, #FFFFEB, #FFFFEB);
+      border: 1px solid rgba(240, 173, 0, 0.18);
+      padding: 10px 20px;
+          
+      }
+      
+      .note-text{
+          font-size: 13px;
+          color: var(--labelcolor);
+      }
+      .red-note{
+          color: var(--red);
+          font-size: 15px;
+          font-weight: 700;
+      }
+      
+      .black-note{
+          color: var(--labelcolor);
+          font-size: 15px;
+          font-weight: 700;
+      }
+      
+      .interest-container{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      }
+      
+      .interest{
+          font-size: 20px;
+          font-weight: 700;
+          color: var(--black);
+      }
+
+      .plan-invest-btn{
+        width: 180px;
+        height: 40px;
+        color: white;
+        background-color: var(--green);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        font-weight: 700;
+    }
+
+}

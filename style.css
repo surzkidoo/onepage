@@ -4,8 +4,11 @@
     padding: 0;
     margin: 0;
     font-family: 'Inria Sans', sans-serif;
-}
 
+}
+a{
+    text-decoration: none;
+}
 
 :root{
     --yellow :rgba(254, 204, 77, 1);
