@@ -3,17 +3,15 @@
 }
 
 .plan-detail-container {
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .section-container{
-    box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.03);
     background-color: white;
     border-radius: 8px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -22,23 +20,29 @@
 .plan-desc-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  padding: 20px;
   width: 100%;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+
 }
 
 .plan-key-value-container {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+
+
 }
 
 .plan-key{
-    color: var(--labelcolor);
+    color: var(--black);
     font-size: 11px;
 }
 
 .plan-value{
     color: var(--black);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -57,18 +61,18 @@ padding: 5px 10px;
 }
 
 .note-text{
-    font-size: 11px;
+    font-size: 10px;
     color: var(--labelcolor);
 }
 .red-note{
     color: var(--red);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
 }
 
 .black-note{
     color: var(--labelcolor);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -89,7 +93,7 @@ padding: 5px 10px;
     height: 40px;
     color: white;
     background-color: var(--green);
-    border-radius: 8px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,6 +131,7 @@ padding: 5px 10px;
         flex-direction: column;
         gap: 20px;
         width: 100%;
+        box-shadow: none;
       }
       
       .plan-key-value-container {
@@ -192,7 +197,7 @@ padding: 5px 10px;
         height: 40px;
         color: white;
         background-color: var(--green);
-        border-radius: 8px;
+        border-radius: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
