@@ -9,6 +9,9 @@
 a{
     text-decoration: none;
 }
+.menu-item svg{
+    border-color: var(--labelcolor);
+}
 
 :root{
     --yellow :rgba(254, 204, 77, 1);
@@ -190,7 +193,7 @@ header{
     height: 50px;
 }
 
-.sub-menu{
+.active-menu{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -200,7 +203,7 @@ header{
     border-radius:20px;
 }
 
-.sub-name{
+.active-name{
     color: var(--green);
     font-size: 16px;
     font-weight: 700;
@@ -517,7 +520,7 @@ main {
         height: 50px;
     }
     
-    .sub-menu{
+    .active-menu{
         display: flex;
         align-items: center;
         gap: 10px;
@@ -527,7 +530,7 @@ main {
         border-radius:20px;
     }
     
-    .sub-name{
+    .active-name{
         color: var(--green);
         font-size: 16px;
         font-weight: 700;
@@ -554,7 +557,7 @@ main {
     
     .section-header h4{
         font-weight: 400px;
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 400;
     }
     
