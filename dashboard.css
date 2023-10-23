@@ -522,7 +522,7 @@ align-items: center;
 .recent-refer-container{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 20px;
 }
 
