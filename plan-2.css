@@ -1,0 +1,62 @@
+.category-name{
+    font-size: 20px;
+    font-weight: 700;
+    color:rgba(104, 104, 104, 1);
+}
+
+
+.plan-card-container{
+    border: 1px solid rgba(217, 217, 217, 1);
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+
+.plan-name-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plan-name-val{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.plan-type-name{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.plan-type-avail{
+    font-size: 13px;
+    color: var(--labelcolor);
+
+}
+
+.plan-icon{
+    width: 40px;
+}
+
+
+.plan-view-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plan-view{
+    font-weight: 700;
+    color: var(--green);
+    font-size: 13px;
+}
+
+
+
+
+
