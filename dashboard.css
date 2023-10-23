@@ -52,6 +52,45 @@ body{
 }
 
 
+.recent-refer h4{
+    color: var(--labelcolor);
+}
+
+.my-our-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 11px;
+    padding: 10px;
+    
+}
+.my-our-container img{
+    width: 50px;
+    margin-bottom: -8px;
+}
+.our-container{
+    display: flex;
+    background-color: var(--green);
+    color: white;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.my-container{
+    display: flex;
+    background-color: var(--yellow);
+    color: white;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
 
 .dashboard-card{
     background-color: white;
@@ -69,7 +108,7 @@ body{
 
 
 .dashboard-card-fund{
-    height: 220px;
+    height: 150px;
     background-color: var(--green);
     width: 260px;
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.03);
@@ -107,7 +146,7 @@ body{
 .card-section-fund{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 .card-key-fund{
@@ -118,7 +157,7 @@ body{
 .card-value-fund{
     font-weight: 700;
 color: white; 
-font-size: 25px;
+font-size: 20px;
 }
 
 .d-card-value-fund{
@@ -130,7 +169,7 @@ font-size: 25px;
 .card-section{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 1px;
     align-items: center;
 }
 .card-key{
@@ -166,14 +205,21 @@ font-size: 25px;
 }
 
 .recent-container{
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recent-items-container{
     box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.03);
     border-radius: 15px;
     background-color: white;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
+    flex-direction: column;
+    gap: 10px;
 }
 .recent{
     display: flex;
@@ -212,6 +258,12 @@ font-size: 25px;
     font-size: 16px;
     font-weight: 700;
     color: var(--green);
+}
+
+.bonus-price-red{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--red);
 }
 
 .recent-refer-container{
@@ -422,7 +474,7 @@ align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 130px;
+    height: 80px;
 }
 .recent{
     display: flex;
@@ -431,8 +483,8 @@ align-items: center;
    justify-content: center;
 }
 .dash-icon-con{
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     background: rgba(172, 233, 97, 0.45);
     border-radius: 50%;
     display: flex;
@@ -460,6 +512,11 @@ align-items: center;
     font-size: 18px;
     font-weight: 700;
     color: var(--green);
+}
+.bonus-price-red{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--red);
 }
 
 .recent-refer-container{
@@ -508,5 +565,8 @@ align-items: center;
 .refer-link p{
     color: var(--labelcolor);
     font-size: 13px;
+}
+.my-our-container{
+    display: none;
 }
 }
