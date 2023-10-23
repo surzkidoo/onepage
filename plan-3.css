@@ -1,0 +1,212 @@
+
+body{
+    background-color: #F8F8F8;;
+
+}
+.section-header-transaction{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-header-transaction h4{
+    font-weight: 400px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.section-header-transaction .transaction-pre-desc{
+    font-size: 16px;
+    color: var(--labelcolor);
+    font-weight: 700;
+}
+.section-header-transaction .transaction-header-desc{
+    font-size: 10px;
+    color: var(--labelcolor);
+
+}
+
+    
+.invested-container{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.03);
+    height: 110px;
+    padding:  20px;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.invested{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.invested img{
+    width: 75px;
+    height: auto;
+}
+
+
+.invested-desc-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.invested-name{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--green);
+}
+.invested-sub{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   align-items: start;
+}
+.amount-invested-label{
+    font-size: 12px;
+    color: var(--labelcolor);
+}
+
+.amount-invested{
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 700;
+}
+.investment-return{
+   font-size: 10px;
+   color: var(--green);
+}
+
+.more-investment-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    display: none;
+}
+
+.invested-return-desc{
+    font-size: 16px;
+    color: var(--labelcolor);
+}
+
+.invested-return-price{
+    font-size: 40px;
+    color: var(--green);
+    font-weight: 700;
+}
+
+
+
+@media only screen and (min-width: 968px) {
+
+    .section-header-transaction{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .section-header-transaction h4{
+        font-weight: 400px;
+        font-size: 35px;
+        font-weight: 400;
+    }
+    
+    .section-header-transaction .transaction-pre-desc{
+        font-size: 20px;
+        color: var(--labelcolor);
+        font-weight: 700;
+    }
+    .section-header-transaction .transaction-header-desc{
+        font-size: 13px;
+        color: var(--labelcolor);
+    
+    }
+    
+    
+    
+    .invested-container{
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.03);
+        height: 140px;
+        padding:  20px;
+        background-color: white;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    
+    .invested{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    .invested img{
+        width: 105px;
+        height: auto;
+    }
+  
+    
+    .invested-desc-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    
+    }
+    
+    .invested-name{
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--green);
+    }
+    .invested-sub{
+       display: flex;
+       gap: 5px;
+       align-items: center;
+       flex-direction: row;
+    }
+    .amount-invested-label{
+        font-size: 16px;
+        color: var(--labelcolor);
+    }
+
+    .amount-invested{
+        font-size: 20px;
+        color: var(--black);
+        font-weight: 700;
+    }
+    .investment-return{
+       font-size: 16px;
+       color: var(--green);
+    }
+    
+    .more-investment-container{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .invested-return-desc{
+        font-size: 16px;
+        color: var(--labelcolor);
+    }
+
+    .invested-return-price{
+        font-size: 40px;
+        color: var(--green);
+        font-weight: 700;
+    }
+    
+}
