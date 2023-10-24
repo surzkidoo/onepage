@@ -1,0 +1,200 @@
+
+body{
+    background-color: #F8F8F8;;
+
+}
+.section-header-transaction{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-header-transaction h4{
+    font-weight: 400px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.section-header-transaction .transaction-pre-desc{
+    font-size: 16px;
+    color: var(--labelcolor);
+    font-weight: 700;
+}
+.section-header-transaction .transaction-header-desc{
+    font-size: 10px;
+    color: var(--labelcolor);
+
+}
+
+.transaction-menu-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.transaction-menu-active{
+    padding: 10px 5px;
+    border-bottom:1px solid rgba(92, 156, 14, 1);
+    color: var(--green);
+    font-size: 14px;
+    font-family: 700;
+}
+
+.transaction-menu{
+    padding: 10px 5px;
+    color: var(--labelcolor);
+    font-size: 14px;
+
+}
+
+.pro-account-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.deposit-type-container{
+    border: 1px solid rgba(231, 231, 231, 0.65);
+    width: 100%;
+    height: 49px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.radio-container{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+.radio-container svg{
+    height: 18px;
+    width: 18px;
+}
+
+.radio-container p{
+    font-size: 12px;
+}
+
+.btn-continue{
+    height: 35px;
+    color: white;
+    background-color: var(--green);
+    border-radius: 8px;
+    width: 120px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.with-name{
+    color:rgba(146, 146, 146, 1);
+    font-size: 12px;
+}
+@media only screen and (min-width: 968px) {
+
+    .section-header-transaction{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .section-header-transaction h4{
+        font-weight: 400px;
+        font-size: 35px;
+        font-weight: 400;
+    }
+    
+    .section-header-transaction .transaction-pre-desc{
+        font-size: 20px;
+        color: var(--labelcolor);
+        font-weight: 700;
+    }
+    .section-header-transaction .transaction-header-desc{
+        font-size: 13px;
+        color: var(--labelcolor);
+    
+    }
+    
+    .transaction-menu-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        width: 100%;
+        border-bottom: 1px solid rgba(231, 231, 231, 1)
+    }
+    
+    .transaction-menu-active{
+        padding: 10px 5px;
+        border-bottom:3px solid rgba(92, 156, 14, 1);
+        color: var(--green);
+        font-size: 18px;
+    }
+    
+    .transaction-menu{
+        padding: 10px 5px;
+        color: var(--labelcolor);
+        font-size: 18px;
+    
+    }
+
+    .pro-account-container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .deposit-type-container{
+        border: 1px solid rgba(231, 231, 231, 0.65);
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .radio-container{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+    
+    
+    .radio-container svg{
+        height: 32px;
+        width: 32px;
+    }
+    
+    .radio-container p{
+        font-size: 22px;
+    }
+
+    .btn-continue{
+        height: 40px;
+        color: white;
+        background-color: var(--green);
+        border-radius: 8px;
+        width: 180px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        align-self: center;
+    }
+
+    .with-name{
+        color:rgba(146, 146, 146, 1);
+        font-size: 22px;
+    }
+
+}
