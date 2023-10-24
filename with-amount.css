@@ -1,0 +1,165 @@
+body {
+  background-color: #f8f8f8;
+}
+.section-header-transaction {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-header-transaction h4 {
+  font-weight: 400px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.section-header-transaction .transaction-pre-desc {
+  font-size: 16px;
+  color: var(--labelcolor);
+  font-weight: 700;
+}
+.section-header-transaction .transaction-header-desc {
+  font-size: 10px;
+  color: var(--labelcolor);
+}
+
+.general-with-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 0px;
+    gap: 15px;
+  }
+
+  .with-amount-con {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 75px;
+    border: 1px solid rgba(231, 231, 231, 0.65);
+    border-radius: 10px;
+  
+  }
+
+  .currency-sign {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 700;
+  }
+
+  .with-amount-input {
+    height: 20px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 10px;
+  }
+  .with-amount-input::placeholder {
+    color: rgba(231, 231, 231, 1) !important;
+  }
+
+  .with-btn {
+    height: 38px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: var(--green);
+    color: white;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 700;
+    align-self: center;
+  }
+
+@media only screen and (min-width: 968px) {
+  .section-header-transaction {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section-header-transaction h4 {
+    font-weight: 400px;
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  .section-header-transaction .transaction-pre-desc {
+    font-size: 20px;
+    color: var(--labelcolor);
+    font-weight: 700;
+  }
+  .section-header-transaction .transaction-header-desc {
+    font-size: 13px;
+    color: var(--labelcolor);
+  }
+
+  .general-with-con{
+    background-color: white;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.03);
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 40px;
+    gap: 15px;
+  }
+
+  .with-amount-con {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    border: none;
+  
+  }
+
+  .currency-sign {
+    font-size: 50px;
+    color: var(--black);
+    font-weight: 700;
+  }
+
+  .with-amount-input {
+    height: 50px;
+    width: 100%;
+    font-size: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+  }
+  .with-amount-input::placeholder {
+    color: rgba(231, 231, 231, 1) !important;
+  }
+
+  .with-btn {
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: var(--green);
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 700;
+  }
+}
