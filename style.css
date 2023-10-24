@@ -46,9 +46,6 @@ header{
 
 .main-container{
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     height: 100vh;
 }
 .user-container{
@@ -436,9 +433,6 @@ main {
     
     .main-container{
         width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
         height: 100vh;
     }
     .user-container{
