@@ -12,4 +12,10 @@ var sidebar = document.querySelector('.sidebar-container')
             overlay.style.display= 'none'
 
             })
+
+
+            overlay.addEventListener('click',()=>{
+                sidebar.style.display= 'none'
+                overlay.style.display= 'none'
+            })
         })

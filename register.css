@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Poppins:wght@100;200;300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inria Sans', sans-serif;
+
+}
+:root{
+    --yellow :rgba(254, 204, 77, 1);
+    --green :  rgba(92, 156, 14, 1);
+    --menuSelected :   rgba(239, 239, 239, 1);
+    --labelcolor: rgba(146, 146, 146, 1);
+    --black: rgba(0,0,0,1);
+    --red :rgba(255, 0, 0, 1);
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    width: 155px;
+    height: auto;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+    padding: 15px;
+}
+
+.form-container h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+label{
+    font-weight: 700;
+    color: var(--black);
+    font-size: 14px;
+}
+
+
+.input-container{
+    height: 40px;
+    border: 1px solid rgba(231, 231, 231, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.double-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-container input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 12px;
+}
+
+.input-container input::placeholder{
+    font-size: 12px;
+    color: rgba(146, 146, 146, 1);
+}
+
+.checkbox-container{
+    display: flex;
+    flex-wrap: row;
+    gap: 10px;
+    align-self: flex-start;
+    align-items: center;
+    
+}
+
+.checkbox-container input{
+    height: 18px;
+    width: 18px;
+}
+
+.checkbox-container p{
+    font-size: 12px;
+    color: rgba(146, 146, 146, 1);
+}
+
+.checkbox-container p span{
+   color: var(--green);
+   font-weight: 700;
+}
+
+
+
+.warn-text{
+    font-size: 12px;
+    color: rgba(146, 146, 146, 1);
+}
+
+
+.submit-btn{
+    height: 44px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.already p{
+    font-size: 14px;
+    color: rgba(146, 146, 146, 1);
+}
+
+.already  span{
+   color: var(--green);
+   font-weight: 700;
+}
+
+svg{
+    width: 22px;
+    height: 22px;
+}
+.please{
+    color: rgba(146, 146, 146, 1);
+    font-size: 14px;
+}
+
+.forget{
+    color: var(--green);
+    font-size: 14px;
+    align-self: flex-end;
+}
+@media only screen and (min-width: 968px) {
+
+    .please{
+        color: rgba(146, 146, 146, 1);
+        font-size: 22px;
+    }
+    
+    .forget{
+        color: var(--green);
+        font-size: 22px;
+        align-self: flex-end;
+    }
+
+    svg{
+        width: 28px;
+        height: 28px;
+    }
+    header{
+        height: 90px;
+        padding: 40px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 205px;
+    }
+    
+    
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .form-container{
+        background-color: white;
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 30px;
+    }
+    
+    .form-container h4{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    label{
+        font-weight: 700;
+        color: var(--black);
+        font-size: 18px;
+    }
+    
+    
+    .input-container{
+        height: 60px;
+        border: 1px solid rgba(217, 217, 217, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        gap: 10px;
+        border-radius: 5px;
+    }
+    
+    .double-container{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .input-container input{
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    .input-container input::placeholder{
+        font-size: 20px;
+        color: rgba(146, 146, 146, 1);
+    }
+    
+    .checkbox-container{
+        display: flex;
+        flex-wrap: row;
+        gap: 10px;
+        align-self: flex-start;
+        align-items: center;
+        
+    }
+    
+    .checkbox-container input{
+        height: 18px;
+        width: 18px;
+    }
+    
+    .checkbox-container p{
+        font-size: 16px;
+        color: rgba(146, 146, 146, 1);
+    }
+    
+    .checkbox-container p span{
+       color: var(--green);
+       font-weight: 700;
+    }
+    
+    
+    
+    .warn-text{
+        font-size: 16px;
+        color: rgba(146, 146, 146, 1);
+    }
+    
+    
+    .submit-btn{
+        height: 65px;
+        background-color: var(--green);
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+    }
+    
+    .already p{
+        font-size: 18px;
+        color: rgba(146, 146, 146, 1);
+    }
+    
+    .already  span{
+       color: var(--green);
+       font-weight: 700;
+    }
+}
