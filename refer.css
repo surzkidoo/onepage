@@ -4,7 +4,11 @@
 
 }
 
+.history-activity-con{
+    display: flex;
+    flex-direction: column-reverse;
 
+}
  .dashboard-section-header{
     display: flex;
     justify-content: space-between;
@@ -592,4 +596,8 @@ table {
         font-weight: 700;
       }
 
+      .history-activity-con{
+        display: flex;
+        flex-direction: column;
+    }
   }
