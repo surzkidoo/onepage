@@ -14,7 +14,10 @@
     --black: rgba(0,0,0,1);
     --red :rgba(255, 0, 0, 1);
 }
-
+a{
+    text-decoration: none;
+    text-decoration: none;
+}
 header{
     height: 80px;
     display: flex;
