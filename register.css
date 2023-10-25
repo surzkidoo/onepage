@@ -127,6 +127,12 @@ label{
     color: rgba(146, 146, 146, 1);
 }
 
+.account-recover-text{
+    font-size: 12px;
+    color: var(--green);
+    font-style: italic;
+}
+
 
 .submit-btn{
     height: 44px;
@@ -288,6 +294,10 @@ svg{
     .warn-text{
         font-size: 16px;
         color: rgba(146, 146, 146, 1);
+    }
+    .account-recover-text{
+        font-size: 16px;
+        color: var(--green);
     }
     
     

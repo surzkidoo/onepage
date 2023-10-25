@@ -274,6 +274,34 @@
 
                </div>
             </div>
+
+            <div class="model-add-account">
+                <div class="add-container">
+                        <div class="add-account-header">
+                            <h4>Add Bank Account</h4>
+                            <p>Please add a valid Bank information to ease your withdrawals.</p>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Account Number <span class="required">*</span></label>
+                            <input type="text" value="" class="">
+                            <p class="error-text">Ensure to enter 10-digit bank account number</p>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="">Bank Name <span class="required">*</span></label>
+                            <input type="text" value="" class="">
+                        </div>
+
+                        <button class="add-account-btn">Add Account</button>
+                        
+                <svg width="24" class="close-add" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.44 4.44049C4.57913 4.30116 4.74436 4.19062 4.92625 4.11521C5.10813 4.03979 5.3031 4.00098 5.5 4.00098C5.6969 4.00098 5.89187 4.03979 6.07375 4.11521C6.25564 4.19062 6.42087 4.30116 6.56 4.44049L12 9.87849L17.44 4.44049C17.5792 4.30128 17.7445 4.19086 17.9263 4.11553C18.1082 4.04019 18.3031 4.00142 18.5 4.00142C18.6969 4.00142 18.8918 4.04019 19.0737 4.11553C19.2555 4.19086 19.4208 4.30128 19.56 4.44049C19.6992 4.57969 19.8096 4.74494 19.885 4.92682C19.9603 5.10869 19.9991 5.30363 19.9991 5.50049C19.9991 5.69735 19.9603 5.89228 19.885 6.07415C19.8096 6.25603 19.6992 6.42128 19.56 6.56049L14.122 12.0005L19.56 17.4405C19.8411 17.7216 19.9991 18.1029 19.9991 18.5005C19.9991 18.8981 19.8411 19.2794 19.56 19.5605C19.2789 19.8416 18.8976 19.9996 18.5 19.9996C18.1024 19.9996 17.7211 19.8416 17.44 19.5605L12 14.1225L6.56 19.5605C6.27887 19.8416 5.89758 19.9996 5.5 19.9996C5.10242 19.9996 4.72113 19.8416 4.44 19.5605C4.15887 19.2794 4.00093 18.8981 4.00093 18.5005C4.00093 18.1029 4.15887 17.7216 4.44 17.4405L9.878 12.0005L4.44 6.56049C4.30067 6.42136 4.19014 6.25612 4.11473 6.07424C4.03931 5.89235 4.00049 5.69739 4.00049 5.50049C4.00049 5.30359 4.03931 5.10862 4.11473 4.92673C4.19014 4.74485 4.30067 4.57962 4.44 4.44049Z" fill="black"/>
+                    </svg>
+                </div>
+
+                    
+            </div>
             
             </main>
 
@@ -283,5 +311,18 @@
       
 </body>
 <script src="index.js"></script>
+<script>
+     var overlay = document.querySelector('.model-add-account');
+    var withbtn = document.querySelector('.note-btn')
+    var successBtn = document.querySelector('.close-add')
 
+
+    withbtn.addEventListener('click',()=>{
+        overlay.style.display= 'flex';
+
+        successBtn.addEventListener('click',()=>{
+            overlay.style.display ='none'
+        })
+    }  )
+</script>
 </html>
