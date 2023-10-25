@@ -13,8 +13,11 @@
   color: var(--labelcolor);
 }
 
-.balance-container{
+.i-balance-container{
   text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .current-balance {
@@ -36,6 +39,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  gap: 30px;
 }
 
 .investment-image {
@@ -43,6 +47,7 @@
   height: auto;
   align-self: start;
   margin: auto;
+  order: 0;
 }
 
 .report-container {
@@ -50,6 +55,7 @@
   flex-direction: column;
   gap: 15px;
   width: 100%;
+  order: 3;
 }
 
 .plan-report-container {
@@ -57,6 +63,8 @@
   flex-direction: column;
   gap: 15px;
   width: 100%;
+  order: 2;
+
 }
 
 .hr {
@@ -307,6 +315,7 @@ td {
   .report-overall-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     flex-direction: row;
   }
 
@@ -322,6 +331,7 @@ td {
     flex-direction: column;
     gap: 15px;
     width: 450px;
+    order: 2;
   }
 
   .plan-report-container {
@@ -329,6 +339,7 @@ td {
     flex-direction: column;
     gap: 15px;
     width: 100%;
+    order: 3;
   }
 
   .hr {
