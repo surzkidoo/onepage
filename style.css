@@ -8,7 +8,11 @@
 }
 a{
     text-decoration: none;
-    color: none;
+    color: inherit;
+}
+
+a:active{
+    color: initial;
 }
 
 .menu-item svg{
@@ -793,6 +797,10 @@ main {
 
     .mobile-overlay{
         display: none;
+    }
+    a{
+        text-decoration: none;
+        color: none;
     }
   }
 
