@@ -70,7 +70,7 @@ body{
     
 }
 .my-our-container img{
-    width: 50px;
+    width: 45px;
     margin-bottom: -8px;
 }
 .our-container{
@@ -169,14 +169,14 @@ font-size: 20px;
 .d-card-value-fund{
     font-weight: 400;
     color: white; 
-    font-size: 18px;
+    font-size: 11px;
 }
 
 .card-section{
     display: flex;
     flex-direction: column;
-    gap: 1px;
-    align-items: center;
+    gap: 5px;
+    align-items: end;
 }
 .card-section-lg{
     display: none;
@@ -199,7 +199,8 @@ font-size: 20px;
 .card-value{
     font-weight: 700;
     color: var(--black);
-    font-size: 12px;
+    font-size: 11px;
+    text-align: end;
 }
 
 .d-card-value{

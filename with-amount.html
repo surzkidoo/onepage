@@ -278,16 +278,16 @@
 <script src="index.js"></script>
 
 <script>
-    var overlay = document.querySelector('.model-success');
+    var modeloverlay = document.querySelector('.model-success');
     var withbtn = document.querySelector('.with-btn')
     var successBtn = document.querySelector('.with-success-btn')
 
 
     withbtn.addEventListener('click',()=>{
-        overlay.style.display= 'flex';
+       modeloverlay.style.display= 'flex';
 
         successBtn.addEventListener('click',()=>{
-            overlay.style.display ='none'
+           modeloverlay.style.display ='none'
         })
     })
 </script>

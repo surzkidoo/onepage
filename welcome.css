@@ -34,6 +34,10 @@ header{
     justify-content: center;
 }
 
+.name{
+    color: var(--green);
+}
+
 .form-container{
     background-color: white;
     width: 100%;
@@ -91,6 +95,14 @@ label{
     font-size: 12px;
 }
 
+.input-container select{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 12px;
+    color: rgba(146, 146, 146, 1);
+}
+
 .input-container input::placeholder{
     font-size: 12px;
     color: rgba(146, 146, 146, 1);
@@ -105,21 +117,6 @@ label{
     
 }
 
-.checkbox-container input{
-    height: 18px;
-    width: 18px;
-}
-
-.checkbox-container p{
-    font-size: 12px;
-    color: rgba(146, 146, 146, 1);
-}
-
-.checkbox-container p span{
-   color: var(--green);
-   font-weight: 700;
-}
-
 
 
 .warn-text{
@@ -130,7 +127,9 @@ label{
 .account-recover-text{
     font-size: 12px;
     color: var(--green);
-    font-style: italic;
+    font-family: 700;
+    align-self: center;
+
 }
 
 
@@ -174,7 +173,7 @@ svg{
 
     .please{
         color: rgba(146, 146, 146, 1);
-        font-size: 22px;
+        font-size: 18px;
     }
     
     .forget{
@@ -259,6 +258,13 @@ svg{
         width: 100%;
         font-size: 20px;
     }
+
+    .input-container select{
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 20px;
+    }
     
     .input-container input::placeholder{
         font-size: 20px;
@@ -274,21 +280,9 @@ svg{
         
     }
     
-    .checkbox-container input{
-        height: 18px;
-        width: 18px;
-    }
-    
-    .checkbox-container p{
-        font-size: 16px;
-        color: rgba(146, 146, 146, 1);
-    }
-    
-    .checkbox-container p span{
-       color: var(--green);
-       font-weight: 700;
-    }
-    
+   
+   
+  
     
     
     .warn-text{
@@ -296,8 +290,10 @@ svg{
         color: rgba(146, 146, 146, 1);
     }
     .account-recover-text{
-        font-size: 16px;
+        font-size: 20px;
         color: var(--green);
+        font-family: 700;
+        align-self: center;
     }
     
     
@@ -308,18 +304,9 @@ svg{
         border: none;
         outline: none;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
         width: 100%;
     }
     
-    .already p{
-        font-size: 18px;
-        color: rgba(146, 146, 146, 1);
-    }
-    
-    .already  span{
-       color: var(--green);
-       font-weight: 700;
-    }
 }

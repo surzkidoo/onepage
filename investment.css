@@ -13,8 +13,8 @@
   color: var(--labelcolor);
 }
 
-.balance-container {
-  display: none;
+.balance-container{
+  text-align: end;
 }
 
 .current-balance {
@@ -286,12 +286,11 @@ td {
     color: var(--labelcolor);
   }
 
-  .balance-container {
-    display: block;
-  }
+
 
   .current-balance {
     color: var(--green);
+    text-align: end;
   }
 
   .investment-main-container {
@@ -495,6 +494,7 @@ td {
     align-items: center;
     background: rgba(0, 0, 0, 0.3);
     display: none;
+z-index: 30;
   }
 
   .message-container {
