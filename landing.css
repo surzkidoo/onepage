@@ -4,8 +4,10 @@
     padding: 0;
     margin: 0;
     font-family: 'Inria Sans', sans-serif;
+    scroll-behavior: smooth;
 
 }
+
 
 :root{
     --yellow :rgba(240, 173, 0, 1);
@@ -26,6 +28,7 @@
 }
 
 
+
 .faq-text{
     display: none;
 }
@@ -37,6 +40,7 @@
     flex-direction: column;
     gap: 60px;
     margin-top: 60px;
+    overflow-x: hidden;
 }
 
 
@@ -190,11 +194,13 @@ header{
 .about-image-container{
     display: flex;
     flex-direction: row;
-    height: 400px;
+    height: 300px;
     gap: 15px;
     overflow: hidden;
-    width: 100%;
+    width: 80%;
     display: none;
+    align-self:center;
+
     
 }
 .img-group-1{
@@ -267,7 +273,9 @@ header{
     display: flex;
     gap: 15px;
     align-items: center;
-
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .about-service{
@@ -312,6 +320,7 @@ header{
 .add-service-container img{
     height: 16px;
     width: 16px;
+    display: block;
 }
 
 
@@ -340,17 +349,16 @@ header{
 
 .top-bg-1{
     position: absolute;
-    width: 650px;
-    height: 850px;
+    width: 150px;
+    height: 150px;
     z-index: -1;
-    top:-100px;
 }
 
 
 .top-bg-2{
     position: absolute;
-    width: 450px;
-    height: 750px;
+    width: 150px;
+    height: 150px;
     z-index: -1;
     right: 0;
 
@@ -432,10 +440,12 @@ header{
     gap: 20px;
 }
 
+
 .ss{
     align-self: flex-start;
     margin-top: 0px;
 }
+
 .top-card-header{
     font-size: 14px;
     font-weight: 700;
@@ -448,6 +458,7 @@ header{
     width: 100%;
 }
 
+
 .top-card-view{
     display: flex;
     flex-direction: row;
@@ -456,6 +467,7 @@ header{
     gap: 10px;
 
 }
+
 .top-top{
     display: flex;
     flex-direction: column;
@@ -511,22 +523,28 @@ header{
 }
 .latest-bg-1{
     position: absolute;
-    width: 660px;
-    height: 600px;
+    width: 160px;
+    height: 100px;
     z-index: -1;
     left:0;
-    top: -100px;
 }
 
 
 .latest-bg-2{
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 100px;
+    height: 100px;
     z-index: -1;
     right: 100px;
     top: -100px;
 
+}
+.latest-chev{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    width: 100%;
 }
 
 .latest-list{
@@ -581,17 +599,18 @@ flex-direction:column;
 
 .over-name{
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
 }
 .over-sub{
     color: white;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .over svg{
     height: 20px;
     width: 20px;
+    display: block;
 }
 
 .chevron-left{
@@ -798,9 +817,8 @@ justify-content: center;
 .stay-bg-1{
     position: absolute;
     width: 100px;
-    height: 550px;
-    z-index: 0;
-    top:500px;
+    height: 150px;
+    z-index: -1;
 }
 
 
@@ -819,15 +837,16 @@ justify-content: center;
 
 .stay-connected-form{
     height: 303px;
-    margin: 0 30px;
+    margin: 0 10px;
     background-color: var(--green);
     border-radius: 10px;
     align-self: center;
-    margin-top: -40px;
-    padding: 15px;
+    margin-top: -130px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     gap: 20px;
 }
@@ -969,7 +988,7 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 0px;
+    bottom: -15px;
     border-radius: 30px;
 }
 
@@ -1348,7 +1367,7 @@ outline: none;
 .trust-desc-container{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     width: 100;
 }
 
@@ -1384,7 +1403,7 @@ outline: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
     width: 100%;
 }
@@ -1393,6 +1412,7 @@ outline: none;
     font-size: 25px;
     color: white;
     font-weight: 700;
+    text-align: center;
 }
 
 .trust-item p{
@@ -1412,15 +1432,30 @@ outline: none;
 }
 
 
+.trust-btn-mobile{
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
 
 .trust-image-container{
-    width: 250px;
+    width: 100%;
     height: auto;
     display: none;
+    
 }
 
 .trust-image-container img{
     width: 80%;
+    margin: auto;
 }
 
 
@@ -1436,7 +1471,7 @@ footer{
 .footer-content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -1866,6 +1901,16 @@ width: 40%;
         gap: 10px;
         align-items: center;
         flex-direction: row;
+        padding: 0;
+        box-shadow: none;
+
+    }
+
+    .add-service-container img{
+        height:26px;
+        width: 26px;
+        display: block;
+
     }
     
     .about-service{
@@ -1889,11 +1934,18 @@ width: 40%;
         display: flex;
         align-items: center;
         gap: 10px;
+
     }
     
     .add-service-container p{
         font-size: 18px;
         font-weight: 700;
+    }
+
+    .add-service-list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
     
     
@@ -1916,7 +1968,7 @@ width: 40%;
         margin: 0 10px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         /* background: url(assests/top-product-bg-1.svg) left top no-repeat, url(assests/top-product-bg-2.svg) right bottom  no-repeat;
         background-size: auto,auto; */
     }
@@ -1980,7 +2032,8 @@ width: 40%;
         margin-top: 30px;
         width: 100%;
         justify-content: center;
-        height: 100%;
+        height: 600px;
+        margin: 0 10px;
         overflow-x: hidden;
     }
     
@@ -2055,8 +2108,9 @@ width: 40%;
     .top-long-text{
         font-size:  20px;
         color: rgba(146, 146, 146, 1);
-        padding: 0  80px;
         text-align: center;
+        width: 70%;
+        align-self: center;
     }
     
     .top-btn{
@@ -2105,6 +2159,14 @@ width: 40%;
         top: -100px;
     
     }
+
+    .latest-chev{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        width: 80%;
+    }
     
     .latest-list{
         display: flex;
@@ -2113,14 +2175,20 @@ width: 40%;
         flex-wrap: nowrap;
         position: relative;
         gap: 20px;    
-        height: initial;
-        width: initial;
-        overflow: initial;
+        height: 380px;
+        width: 100%;
+        overflow-x: scroll;
+
     }
+
+    .latest-list::-webkit-scrollbar{
+        opacity: 0;
+    }
+
     
     .latest-item{
         height: 320px;
-        width: 296px;
+        min-width: 296px;
     position: relative;    
     border-radius: 15px;
     box-shadow: 0px 0px 50px 30px rgba(0, 0, 0, 0.08);
@@ -2171,6 +2239,7 @@ width: 40%;
         width: 40px;
     }
     
+  
     .chevron-left{
         display: flex;
         position: absolute;
@@ -2343,7 +2412,7 @@ width: 40%;
         position: absolute;
         width: 500px;
         height: 550px;
-        z-index: 0;
+        z-index: -1;
         top:500px;
     }
     
@@ -2494,10 +2563,11 @@ width: 40%;
     
     .how-help-image-con{
         position: relative;
+        display: block;
     }
     .help-image{
-        height: 506px;
-        width: 533px;
+        height: auto;
+        width: 433px;
         margin-right: 60px;
     }
     
@@ -2512,7 +2582,7 @@ width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
-        bottom: 40px;
+        bottom: -70px;
         border-radius: 30px;
     }
     
@@ -2932,16 +3002,21 @@ width: 40%;
         height: 75px;
         width: 78px;
     }
+
+    .trust-btn-mobile{
+       display: none;
+    }
     
     
     
     .trust-image-container{
-        width: 400px;
+        width: 500px;
         height: auto;
+        display: flex;
     }
     
     .trust-image-container img{
-        width: 400px;
+        width: 500px;
     }
     
     
@@ -3047,8 +3122,6 @@ width: 40%;
         font-weight: 700;
         list-style: none;
     }
-    
-    
     
     
     
