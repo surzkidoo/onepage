@@ -209,6 +209,7 @@ svg{
         border: 10px solid var(--green);
         z-index: 2;
         border-radius: 150px;
+        opacity: 0.5;
     }
 
     .circle-bg-2{
@@ -221,6 +222,7 @@ svg{
         z-index: 2;
         border-radius: 100px;
         box-shadow: 1px 10px 60px 10px rgba(0, 0, 0, 0.489);
+        opacity: 0.5;
     }
 
     .bg h1{
